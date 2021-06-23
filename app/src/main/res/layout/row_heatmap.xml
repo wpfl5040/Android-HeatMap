@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="heatmap"
+            type="com.wpfl.heatmap.model.HeatMapData" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/txt_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        setDays="@{heatmap.date}"
+        tools:text="1" />
+
+</RelativeLayout>
+
+</layout>
